@@ -1,0 +1,73 @@
+/* General Styles */
+body {
+    background-color: #2d2a4a; /* Spooky dark purple */
+    color: #ffffff;           /* White text for readability */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Announcement Box */
+.announcement {
+    border: 2px solid #ff69b4; /* Quirky pink border */
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(92, 84, 112, 0.9); /* Semi-transparent spooky purple-gray */
+    box-shadow: 0 0 15px #ff69b4;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    color: #ffb6c1; /* Light pink text for a cute vibe */
+    animation: bounce 1s infinite alternate;
+}
+
+/* Time Information */
+.time-info {
+    font-size: 1.2rem;
+    color: #ffb6c1; /* Light pink for better contrast */
+    margin-top: 10px;
+    animation: popIn 1s ease-in-out;
+}
+
+/* Description Text */
+p {
+    font-size: 1.2rem;
+    color: #ffb6c1; /* Light pink text */
+    margin-top: 10px;
+}
+
+/* Keyframe Animations */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
